@@ -1,10 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",                  // Static export
-  images: { unoptimized: true },     // Needed for S3
+  output: "export",
+  images: { unoptimized: true },
   reactCompiler: true,
   trailingSlash: true,
+  allowedDevOrigins: ['*'],
 };
 
 export default nextConfig;
