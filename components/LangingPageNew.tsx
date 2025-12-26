@@ -9,6 +9,27 @@ import { track } from "@/lib/track";
 
 // import { trackPageView } from "@/lib/analytics-client";
 
+const AI_FEATURES = [
+    {
+        title: "Auto-capture from LinkedIn",
+        description: "See a job you like? The extension instantly logs it with salary, company, and requirements.",
+    },
+    {
+        title: "Smart follow-up reminders",
+        description: "Never miss a recruiter—AI reminds you exactly when to send a follow-up with a draft ready.",
+    },
+    {
+        title: "Privacy-first design",
+        description: "Everything runs in your browser. No servers, no cloud logging, no data sell-off.",
+    },
+];
+
+const AI_COMPARISONS = [
+    { feature: "Easy Setup", jobpilot: "1-click Chrome install", traditional: "Complex integrations" },
+    { feature: "Data Security", jobpilot: "100% client-side, zero servers", traditional: "Cloud logging & tracking" },
+    { feature: "Auto-logging", jobpilot: "Captures jobs you view or apply to", traditional: "Manual entry required" },
+];
+
 export default function ChromeExtensionLanding() {
     const [showWaitlist, setShowWaitlist] = useState(false);
     useEffect(() => {
@@ -43,8 +64,7 @@ export default function ChromeExtensionLanding() {
                             <FaChrome /> JobPilot AI Chrome Extension
                         </h1>
                         <p>
-                            Track your LinkedIn job applications automatically — with complete privacy.
-                            JobPilot AI runs locally, never stores credentials, and keeps your data in your control.
+                            Tired of losing track of job applications across LinkedIn, Indeed, and company websites? Install the JobPilot AI extension to auto-capture every job you apply to—with complete privacy and zero data sharing.
                         </p>
 
                         <ul className={styles.heroPainList}>

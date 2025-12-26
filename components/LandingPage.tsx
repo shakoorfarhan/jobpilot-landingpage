@@ -24,9 +24,9 @@ import styles from "../styles/Landing.module.css";
 
 const ROTATING_PHRASES = [
   "forgotten follow-ups",
-  "messy application spreadsheets",
-  "copy-pasted outreach",
-  "lost recruiter context",
+  "application chaos",
+  "generic copy-pasted outreach",
+  "lost recruiter wins",
 ];
 
 const PAIN_POINTS = [
@@ -63,9 +63,9 @@ const STEPS = [
 ];
 
 const METRICS = [
-  { value: "1 workspace", label: "Applications, documents, notes together" },
-  { value: "< 5 min", label: "Spin up an AI draft you can edit" },
-  { value: "Beta", label: "Free while we finish automation workflows" },
+  { value: "1 workspace", label: "Apps, resumes, notes—all in one place" },
+  { value: "2-3x faster", label: "Outreach & follow-ups with AI drafts" },
+  { value: "100% free", label: "During beta, no credit card required" },
 ];
 
 const TESTIMONIALS = [
@@ -281,18 +281,17 @@ const LandingPage = () => {
                 in the past.
               </h1>
               <p>
-                JobPilot is an AI job tracker and resume generator that helps job seekers track
-                applications, manage follow-ups, and generate tailored resumes in one smart workspace.
+                Stop juggling spreadsheets and copy-pasting outreach. JobPilot AI tracks all your applications, generates personalized resumes and follow-ups, and shows you which skills and regions attract callbacks—all in one focused workspace.
               </p>
               <ul className={styles.heroPainList}>
                 <li>
-                  <FaShieldAlt /> Always-on reminders so no recruiter goes cold.
+                  <FaShieldAlt /> AI auto-generates personalized cover letters and follow-ups in seconds.
                 </li>
                 <li>
-                  <FaPlay /> AI-crafted resumes and outreach in minutes, not hours.
+                  <FaPlay /> One-click application capture from LinkedIn, Indeed, and job boards.
                 </li>
                 <li>
-                  <FaClock /> Live analytics to show which skills and regions respond.
+                  <FaClock /> Real-time insights on which skills and regions get callbacks.
                 </li>
               </ul>
               <div className={styles.stripeBadge}>
@@ -333,18 +332,22 @@ const LandingPage = () => {
             </div>
             <div className={styles.heroVisual}>
               <div className={styles.heroMediaFrame}>
-                <iframe
-                  src="/JobPilot_ Job Search Simplified.mp4" // replace with your HeyGen or YouTube embed URL
-                  title="Career MVP demo video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   style={{
                     width: "100%",
                     height: "100%",
                     borderRadius: "20px",
                     border: "none",
+                    objectFit: "cover",
                   }}
-                />
+                >
+                  <source src="/JobPilot_ Job Search Simplified.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
