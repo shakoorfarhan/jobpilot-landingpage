@@ -337,13 +337,6 @@ const LandingPage = () => {
                   muted
                   loop
                   playsInline
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    borderRadius: "20px",
-                    border: "none",
-                    objectFit: "cover",
-                  }}
                 >
                   <source src="/JobPilot_ Job Search Simplified.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
